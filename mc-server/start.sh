@@ -99,7 +99,7 @@ cd /usr/src/serverfiles/ || exit
 if [[ -z "$CUSTOM_COMMAND" ]]; then
   printf "%s\n" "Starting JAR file with: $RAM of RAM"
   # Start java with the custom flags
-  java -Xms$RAM -Xmx$RAM $FLAGS -jar $JAR_FILE nogui
+  java -Xmx$RAM -Xms$RAM -jar $JAR_FILE nogui
 else
   $CUSTOM_COMMAND
 fi
